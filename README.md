@@ -1,7 +1,10 @@
 # Step to run the Project
->Step 1 : ''' cd Business-Insighter '''
+>Step 1 :
+```
+cd Business-Insighter
+```
 >Step 2 : 
-'''
+```
 npm init -y
 npm i
 npm add hono
@@ -9,21 +12,21 @@ npm add @hono/zod-validator
 npm add zod
 npm add @hono/clerk-auth
 npm add @clerk/backend
-'''
+```
 >Step 3 : Add the .env.local file in the src folder
-'''
+```
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="clerk_publishing_key"
 CLERK_PUBLISHABLE_KEY="clerk_publishing_key"
 CLERK_SECRET_KEY="cleark_secret_key"
 
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-'''
+```
 > Get this secret key from Clerak official webisite
 > Step 4: Run the Project
-'''
+```
 npm run dev
-'''
+```
 
 
 # Setup for the the project
