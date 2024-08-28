@@ -62,3 +62,37 @@ npm add @hono/clerk-auth
 npm add @clerk/backend
 
 ```
+
+# Desing the Header Componet with Dynamic Way
+
+
+
+# DataBase Connetion of Postgress
+> Step 1: Login the Neon Server and Create the project and get the 'Connection String and Add into .env.local file
+```
+DATABASE_URL=connetion_string
+```
+
+> Step 2: For accessing the data from server we need to install same command.
+```
+npm i drizzle-orm @neondatabase/serverless
+npm i -D drizzle-kit@0.20.17
+npm i drizzle-orm@0.30.10
+```
+
+> Step 3: Add the package that are required for the magration of data to database server
+```
+npm i dotenv -D
+npm i tsx
+npm i pg -D
+```
+
+> Step 4: It Generate the database by using command
+```
+npm run db:generate
+```
+
+> Step 5: It Migrate data by using command
+```
+npm run db:migrate
+```
