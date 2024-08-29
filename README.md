@@ -21,6 +21,10 @@ CLERK_SECRET_KEY="cleark_secret_key"
 
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+DATABASE_URL=url_of_database
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
 ```
 > Get this secret key from Clerak official webisite
 > Step 4: Run the Project
@@ -68,31 +72,41 @@ npm add @clerk/backend
 
 
 # DataBase Connetion of Postgress
-> Step 1: Login the Neon Server and Create the project and get the 'Connection String and Add into .env.local file
+>Step 1: Login the Neon Server and Create the project and get the 'Connection String and Add into .env.local file
 ```
 DATABASE_URL=connetion_string
 ```
 
-> Step 2: For accessing the data from server we need to install same command.
+>Step 2: For accessing the data from server we need to install same command.
 ```
 npm i drizzle-orm @neondatabase/serverless
 npm i -D drizzle-kit@0.20.17
 npm i drizzle-orm@0.30.10
 ```
 
-> Step 3: Add the package that are required for the magration of data to database server
+>Step 3: Add the package that are required for the magration of data to database server
 ```
 npm i dotenv -D
 npm i tsx
 npm i pg -D
 ```
 
-> Step 4: It Generate the database by using command
+>Step 4: It Generate the database by using command
 ```
 npm run db:generate
 ```
 
-> Step 5: It Migrate data by using command
+>Step 5: It Migrate data by using command
 ```
 npm run db:migrate
 ```
+
+#Design GET API for accounts database
+>Step 1: Setup the route.ts and accounts.ts file and design api for get method
+
+>Step 2: Install some packages that handle routes the data
+ TanStack Query provides a high advantage in the data fetching and caching approach of web applications with automatic caching, refetching and retrying. Fetch API provides code reduction and performance increase when compared to methods such as Axios or
+ ```
+npm i @tanstack/react-query
+ ````
+ > For that make file in ./provider/query-provider.tsx add the advances server rendring code from doc
