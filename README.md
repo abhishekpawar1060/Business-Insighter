@@ -101,12 +101,28 @@ npm run db:generate
 npm run db:migrate
 ```
 
-#Design GET API for accounts database
+# Design GET API for accounts database
 >Step 1: Setup the route.ts and accounts.ts file and design api for get method
 
 >Step 2: Install some packages that handle routes the data
  TanStack Query provides a high advantage in the data fetching and caching approach of web applications with automatic caching, refetching and retrying. Fetch API provides code reduction and performance increase when compared to methods such as Axios or
  ```
 npm i @tanstack/react-query
- ````
+ ```
  > For that make file in ./provider/query-provider.tsx add the advances server rendring code from doc
+
+# Design POST API for accounts Database
+>Step 1: Install some pakages for reuse your schema
+```
+npm i drizzle-zod
+npm i @paralleldrive/cuid2 //for generating data id
+```
+>Step 2: Write the post api in accounts.ts file
+>Step 3: Add the form from using shadcn command
+```
+npx shadcn-ui@latest add form
+npx shadcn-ui@latest add input
+npm add zustand
+npx shadcn-ui@latest add sonner
+```
+
