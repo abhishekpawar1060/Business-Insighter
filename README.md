@@ -126,3 +126,16 @@ npm add zustand
 npx shadcn-ui@latest add sonner
 ```
 
+# Desing Transaction Page
+>Step 1: Install all required pakages
+```
+npx shadcn@latest add card
+npx shadcn@latest add table
+npm install @tanstack/react-table
+npx shadcn@latest add checkbox
+```
+
+>Step 2: Goto Below websites follow all the steps for creating data table
+```
+https://ui.shadcn.com/docs/components/data-table
+```
