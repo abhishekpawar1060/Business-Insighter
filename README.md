@@ -135,6 +135,7 @@ npm install @tanstack/react-table
 npx shadcn@latest add checkbox
 npx shadcn@latest add skeleton
 npx shadcn@latest add dialog
+npx shadcn@latest add dropdown-menu
 ```
 
 >Step 2: Goto Below websites follow all the steps for creating data table

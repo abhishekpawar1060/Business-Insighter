@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useNewAccount } from "@/features/accounts/hooks/use-new-account";
+import { ZCOOL_QingKe_HuangYou } from "next/font/google";
 
 
 export default function Home() {
@@ -11,11 +12,7 @@ export default function Home() {
   return (
 
     <div>
-      <Button onClick={onOpen}>
-        Add an account
-      </Button>
       DashboardPage
-    </div>
-    
+    </div>   
   );
 };
