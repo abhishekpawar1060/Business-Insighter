@@ -142,3 +142,6 @@ npx shadcn@latest add dropdown-menu
 ```
 https://ui.shadcn.com/docs/components/data-table
 ```
+
+# Design Categories Page with API
+>Step 1: Design the Schema for Categoris

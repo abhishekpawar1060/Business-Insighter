@@ -15,6 +15,13 @@
       "when": 1724854917956,
       "tag": "0001_dashing_energizer",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1726374755265,
+      "tag": "0002_dizzy_crusher_hogan",
+      "breakpoints": true
     }
   ]
 }
