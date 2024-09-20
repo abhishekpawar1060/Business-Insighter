@@ -126,7 +126,7 @@ npm add zustand
 npx shadcn-ui@latest add sonner
 ```
 
-# Desing Transaction Page
+# Design Transaction Page
 >Step 1: Install all required pakages
 ```
 npx shadcn@latest add card
@@ -145,3 +145,10 @@ https://ui.shadcn.com/docs/components/data-table
 
 # Design Categories Page with API
 >Step 1: Design the Schema for Categoris
+>Step 2: Design API for add, update and delete the category from the database
+>Step 3: Desing the form for the category page
+
+
+# Design Transaction Page with Schema
+>Step 1: Design the Schema for the Tranasction in DB folder
+>Step 2:
