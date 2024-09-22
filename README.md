@@ -152,3 +152,4 @@ https://ui.shadcn.com/docs/components/data-table
 # Design Transaction Page with Schema
 >Step 1: Design the Schema for the Tranasction in DB folder
 >Step 2: Design the API for adding, deleting, updating, searching the transaction in API folder.
+>Step 3: Desing the Transactions hooks.
