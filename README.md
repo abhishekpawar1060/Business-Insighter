@@ -153,7 +153,7 @@ https://ui.shadcn.com/docs/components/data-table
 >Step 1: Design the Schema for the Tranasction in DB folder
 >Step 2: Design the API for adding, deleting, updating, searching the transaction in API folder.
 >Step 3: Desing the Transaction hooks.
->Step 4: Desing the Transaction form.
+>Step 4: Desing the Transaction form for add the transation into database.
 ```
 npm i react-select
 npm install date-fns@^2.28.0
@@ -163,4 +163,10 @@ npx shadcn@latest add popover
 npx shadcn@latest add textarea
 npm install react-currency-input-field
 npx shadcn@latest add tooltip
+```
+
+>Step 5: Desing Transaction Page
+```
+npx shadcn@latest add badge
+
 ```

@@ -15,6 +15,7 @@ export const useGetTransaction = (id?: string) => {
             }
 
             const { data } = await response.json();
+            
             return data;
         },
     });

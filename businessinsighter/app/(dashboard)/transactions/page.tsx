@@ -1,8 +1,9 @@
 "use client";
 import { useNewTransaction } from "@/features/transactions/hooks/use-new-transaction";
+import { useGetTransactions } from "@/features/transactions/api/use-get-transactions";
+import { useBulkDeleteTransactions } from "@/features/transactions/api/use-bulk-delete-transactions";
 
-import { useGetAccounts } from "@/features/accounts/api/use-get-accounts";
-import { useBulkDeleteAccounts } from "@/features/accounts/api/use-bulk-delete-accounts";
+
 
 import { Loader2, Plus } from "lucide-react"
 
@@ -25,13 +26,13 @@ import { Skeleton } from "@/components/ui/skeleton";
 const TransactionPage = () => {
 
     const newTransaction = useNewTransaction();
-    const deleteAccounts = useBulkDeleteAccounts();
-    const accountsQuery = useGetAccounts();
-    const accounts = accountsQuery.data || [];
+    const deleteTransations = useBulkDeleteTransactions();
+    const transactionsQuery = useGetTransactions();
+    const transations = transactionsQuery.data || [];
 
-    const isDisabled = accountsQuery.isLoading || deleteAccounts.isPending;
+    const isDisabled = transactionsQuery.isLoading || deleteTransations.isPending;
 
-    if(accountsQuery.isLoading){
+    if(transactionsQuery.isLoading){
         return(
             <div className="max-w-screen-2xl mx-auto w-full pb-10 -mt-24">
                 <Card className="border-none drop-shadow-sm">
@@ -64,12 +65,12 @@ const TransactionPage = () => {
                 <CardContent>
 
                     <DataTable 
-                        filterKey="name"
+                        filterKey="payee"
                         columns={columns} 
-                        data={accounts} 
+                        data={transations} 
                         onDelete={(row) => {
                             const ids = row.map((r) => r.original.id);
-                            deleteAccounts.mutate({ ids });
+                            deleteTransations.mutate({ ids });
                         }}
                         disabled={isDisabled}
                     />
