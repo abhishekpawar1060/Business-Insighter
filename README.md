@@ -170,3 +170,10 @@ npx shadcn@latest add tooltip
 npx shadcn@latest add badge
 
 ```
+
+>Step 6: Develope a feature for adding CSV file of transactions
+
+```
+npm install react-papaparse
+npx shadcn@latest add select
+```
