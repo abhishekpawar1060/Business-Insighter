@@ -10,7 +10,6 @@ import {
 import { convertAmountToMiliunits } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ImportTable } from "./import-table";
-import { columns } from "./columns";
 
 const dateFormat = "yyyy-MM-dd HH:mm:ss";
 const outputFormat = "yyy-MM-dd";
