@@ -177,3 +177,6 @@ npx shadcn@latest add badge
 npm install react-papaparse
 npx shadcn@latest add select
 ```
+
+# Desing the DashBoard Page
+>Step 1: Desing the API for the DashBoard Page
