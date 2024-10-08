@@ -179,4 +179,8 @@ npx shadcn@latest add select
 ```
 
 # Desing the DashBoard Page
+```
+npm add react-icons
+```
 >Step 1: Desing the API for the DashBoard Page
+>Step 2: Desing the DashBoard Card

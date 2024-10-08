@@ -81,8 +81,8 @@ const app = new Hono()
             );
             const [lastPeriod] = await fetchFinancialData(
                 auth.userId,
-                startDate,
-                endDate,
+                lastPeriodStart,
+                lastPeriodEnd,
             );
 
             const incomeChange = calculatePercentageChange(
@@ -189,7 +189,7 @@ const app = new Hono()
                     remainingChange,
                     incomeAmount: currentPeriod.income,
                     incomeChange,
-                    expensesAmounr: currentPeriod.expenses,
+                    expensesAmount: currentPeriod.expenses,
                     expensesChange,
                     categories: finalCategories,
                     days,
@@ -200,6 +200,3 @@ const app = new Hono()
 
 export default app;
 
-function ls(): import("drizzle-orm").SQLWrapper | undefined {
-    throw new Error("Function not implemented.");
-}
