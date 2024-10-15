@@ -182,5 +182,11 @@ npx shadcn@latest add select
 ```
 npm add react-icons
 ```
->Step 1: Desing the API for the DashBoard Page
->Step 2: Desing the DashBoard Card
+>Step 1: Desing the API for the Dashboard Page
+>Step 2: Desing the Dashboard Card
+>Step 3: Desing the Dashboard charts
+```
+npm install recharts
+npx shadcn@latest add separator
+
+```

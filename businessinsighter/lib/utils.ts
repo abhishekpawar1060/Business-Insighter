@@ -35,7 +35,7 @@ export function calculatePercentageChange(
     return previous === current ? 0 : 100;
   }
 
-  return ((current - previous) / previous);
+  return ((current - previous) / previous) / 100;
 }
 
 
