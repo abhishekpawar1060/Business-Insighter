@@ -190,3 +190,4 @@ npm install recharts
 npx shadcn@latest add separator
 
 ```
+>Step 4> Desing the Dashboard pie
