@@ -190,4 +190,8 @@ npm install recharts
 npx shadcn@latest add separator
 
 ```
->Step 4> Desing the Dashboard pie
+>Step 4: Desing the Dashboard pie
+>Step 5: Desing the Data and Account filters
+```
+npm add query-string
+```
