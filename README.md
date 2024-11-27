@@ -5,13 +5,7 @@ cd Business-Insighter
 ```
 >Step 2 : 
 ```
-npm init -y
 npm i
-npm add hono
-npm add @hono/zod-validator
-npm add zod
-npm add @hono/clerk-auth
-npm add @clerk/backend
 ```
 >Step 3 : Add the .env.local file in the src folder
 ```
