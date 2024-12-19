@@ -6,7 +6,6 @@ import { clerkMiddleware, getAuth } from "@hono/clerk-auth";
 import { and, eq, inArray } from "drizzle-orm"; //eq-equal
 import { zValidator } from "@hono/zod-validator";
 import { createId } from "@paralleldrive/cuid2";
-import { error } from "console";
 
 
 const app = new Hono()
