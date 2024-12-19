@@ -5,7 +5,7 @@ cd Business-Insighter
 ```
 >Step 2 : 
 ```
-npm i
+npm install
 ```
 >Step 3 : Add the .env.local file in the src folder
 ```
@@ -24,6 +24,14 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 > Step 4: Run the Project
 ```
 npm run dev
+```
+
+# Run the Project on docker container
+1. Setup the env file first, above mentioned
+2. Start the Docker Desktop and run below two commands
+```
+docker build -t image_name .
+docker run --env-file .env.local -p 3000:3000 --name project_name image_name
 ```
 
 
