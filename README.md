@@ -7,7 +7,7 @@ cd Business-Insighter
 ```
 npm install
 ```
->Step 3 : Add the .env.local file in the src folder
+>Step 3 : Add the .env.local file in the root directory
 ```
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="clerk_publishing_key"
 CLERK_PUBLISHABLE_KEY="clerk_publishing_key"
