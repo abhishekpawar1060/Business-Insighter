@@ -26,7 +26,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 npm run dev
 ```
 
-# Run the Project on docker container
+# Run the Project on docker desktop
 1. Setup the env file first, above mentioned
 2. Start the Docker Desktop and run below two commands
 ```
